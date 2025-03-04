@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Head Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 18px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            display: grid;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            background-color: #4aa4fd;
+            color: white;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 14px 16px rgba(4, 29, 110, 0.5);
+        }
+
+        .company-name {
+            color: aquamarine;
+            text-decoration: none;
+            text-shadow: #ffffff;
+            text-align: center;
+        }
+
+        .company-name:hover {
+            text-decoration: none;
+            font-size: 35px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            color: aquamarine;
+            font-size: 27px;
+            text-decoration: none;
+            padding: 10px;
+            text-shadow: #ffffff;
+            text-align: center;
+            justify-items: center;
+        }
+
+        header img.logo {
+            border-radius: 50px;
+            box-shadow: 1 14px 26px #02035e;
+            border: #f4f4f4;
+            border-style: dotted;
+            border: 2px;
+            justify-content: center;
+        }
+
+        header img.logo:hover {
+            box-shadow: 0 14px 26px #974a01;
+        }
+
+        header nav {
+            list-style: none;
+            margin: 10px;
+            padding: 17px;
+            display: flex;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 19px;
+            margin-left: 20px;
+            padding: 12px;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: rgb(0, 162, 255);
+            font-size: 23px;
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(0, 238, 255);
+        }
+
+        nav {
+            background-color: #0b07fc;
+            padding: 10px;
+            text-align: center;
+            justify-items: center;
+        }
+
+        .phone-numbers {
+            background-color: #4aa4fd;
+            padding: 1px;
+            text-align: center;
+            justify-items: center;
+            font-size: 15px;
+            border: 0px;
+            border-color: #4aa4fd;
+            box-shadow: 2 14px 16px rgba(2, 50, 206, 0.3);
+        }
+
+        .left-side-column h4 {
+            color: #333;
+            scrollbar-shadow-color: #970601;
+            text-shadow: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            /* For tablets (iPad) and smaller screens */
+            header {
+                grid-template-columns: 1fr; /* Stack header content vertically */
+                text-align: center;
+            }
+
+            .company-name h1 {
+                font-size: 24px; /* Reduce font size for smaller screens */
+            }
+
+            nav {
+                flex-direction: column; /* Stack navigation links vertically */
+            }
+
+            .left-side-column {
+                text-align: center; /* Center align address and email */
+            }
+
+            .phone-numbers h4 {
+                font-size: 14px; /* Reduce font size for phone numbers */
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* For mobile devices */
+            body {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            header {
+                padding: 10px; /* Reduce padding for smaller screens */
+            }
+
+            .company-name h1 {
+                font-size: 20px; /* Further reduce font size for mobile */
+            }
+
+            nav a {
+                font-size: 16px; /* Reduce font size for navigation links */
+                margin-left: 10px;
+                padding: 8px;
+            }
+
+            .left-side-column p {
+                font-size: 14px; /* Reduce font size for address and email */
+            }
+
+            .phone-numbers h4 {
+                font-size: 12px; /* Further reduce font size for phone numbers */
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            /* For laptops and larger tablets */
+            header {
+                grid-template-columns: 1fr 3fr 1fr; /* Adjust grid layout */
+            }
+
+            .company-name h1 {
+                font-size: 28px; /* Adjust font size for medium screens */
+            }
+
+            nav a {
+                font-size: 18px; /* Adjust font size for navigation links */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/bk-logo.webp" alt="Company Logo" width="50%" height="50%">
+        </div>
+        <div class="mid-nav-colomn">
+            <div class="company-name">
+                <h1 class="company-name"> Blue King Plc.</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home"> Home</a>
+                <a href="#About-us"> About Us</a>
+                <a href="#our-services"> Our Services</a>
+                <a href="#contact-us"> Contact us </a>
+            </nav>
+            <div class="phone-numbers">
+                <h4> 08118087084 RC: No. 020699 </h4>
+            </div>
+        </div>
+        <div class="left-side-column">
+            <h4> Office Address:</h4>
+            <p> N0. 1 Ilumoka Street Yemoja Area Ondo City Ondo State</p>
+            <p> Emails: bwayzdigitalconcept@gmail.com, codewriter0206@gmail.com</p>
+        </div>
+    </header>
+    <main class="main-body">
+        <div class="sidebar">
+            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
+            <div class="sidebar-logo">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="content"></div>
+    </main>
+</body>
+</html>
