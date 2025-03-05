@@ -50,6 +50,23 @@
             text-align: center;
             justify-items: center;
         }
+        .bottom-logo {
+            border-radius: 50px;
+            box-shadow: 1 14px 26px #02035e;
+            border: #f4f4f4;
+            border-style: dotted;
+            border: 2px;
+            justify-content: left;
+        }
+
+        .bottom-logo:hover {
+            border-radius: 15px;
+            box-shadow: 15 25px 36px #02035e;
+            border: #2732ce;
+            border-style: double;
+            border: 12px;
+            justify-content: left;
+        }
 
         header img.logo {
             border-radius: 50px;
@@ -156,7 +173,8 @@
                 font-size: 16px; /* Reduce font size for navigation links */
                 margin-left: 10px;
                 padding: 8px;
-            }
+            } 
+
 
             .left-side-column p {
                 font-size: 14px; /* Reduce font size for address and email */
@@ -181,6 +199,58 @@
                 font-size: 18px; /* Adjust font size for navigation links */
             }
         }
+
+        .container {
+                display: grid;
+                grid-template-columns: 200px 1fr; /* Sidebar width and main content takes the rest */
+                grid-template-rows: 1fr; /* Single row with equal height */
+                height: 100vh; /* Full viewport height */
+            }
+
+            .sidebar {
+                background-color: #4aa4fd;
+                color: rgb(0, 0, 0);
+                padding: 7px;
+                justify-items: center;
+                position: static;
+            }
+
+            .main-content {
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
+            .sidenames1 {
+
+                padding: 0;
+                margin: 0;
+            }
+
+             /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Single column layout */
+                grid-template-rows: auto 1fr; /* Sidebar on top, main content below */
+            }
+
+            .sidebar {
+                grid-row: 1; /* Place sidebar in the first row */
+            }
+
+            .main-content {
+                grid-row: 2; /* Place main content in the second row */
+            }
+        }
+     /* .sidebar  {
+            display: grid;
+            grid-template-columns: 1fr 3fr ;
+            gap: 10px;
+           background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            justify-items: left;
+            height: 100%;
+            
+        }*/
     </style>
 </head>
 <body>
@@ -208,24 +278,22 @@
             <p> Emails: bwayzdigitalconcept@gmail.com, codewriter0206@gmail.com</p>
         </div>
     </header>
-    <main class="main-body">
-        <div class="sidebar">
-            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames">  <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidenames1"> <h5>Habeeb Babatunde Oladapo</h5> <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></div>
-            <div class="sidebar-logo">
-                <img src="" alt="">
+
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidenames">  <h6>Habeeb Babatunde Oladapo <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></h6> </div>
+                <div class="sidenames">  <h6>Habeeb Babatunde Oladapo <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></h6> </div>
+                <div class="sidenames">  <h6>Habeeb Babatunde Oladapo <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></h6> </div>
+                <div class="sidenames">  <h6>Habeeb Babatunde Oladapo <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></h6> </div>
+                <div class="sidenames">  <h6>Habeeb Babatunde Oladapo <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></h6> </div>
+                <div class="sidenames">  <h6>Habeeb Babatunde Oladapo <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></h6> </div>
+                <div class="sidenames">  <h6>Habeeb Babatunde Oladapo <p>08118087084</p> <p class="post"> <em> Chairman/CEO</em></p></h6> </div>
+                <img class="bottom-logo" src="/images/bk-logo.webp" alt="Blue King Plc" width="100px" height="auto">
+                </div>
+            <div class="main-content">
+                <h2>Main Content</h2>
+                <p>This is the main content area.</p>
             </div>
         </div>
-        <div class="content"></div>
-    </main>
 </body>
 </html>
